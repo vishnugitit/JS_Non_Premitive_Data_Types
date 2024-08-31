@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      x = null;
+      y = x ?? "default";
+      console.log(y);
+      x = undefined;
+      y = x ?? "default";
+      console.log(y);
+      x = 0;
+      y = x ?? "default";
+      console.log(y);
+    </script>
+  </body>
+</html>
